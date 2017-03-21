@@ -13,6 +13,16 @@ module.exports = {
 	  	  .click('input[value=Login]')
 	  	  .pause(10000)
 		  .click('div > table > tbody > tr > th > input')
-		  .pause(5000);
+		  .pause(5000)
+		  .setValue('tbody > tr:nth-child(2) > td:nth-child(3) > input', browser.Keys.DELETE)
+		  .setValue('tbody > tr:nth-child(3) > td:nth-child(3) > input', browser.Keys.DELETE)
+		  .setValue('tbody > tr:nth-child(4) > td:nth-child(3) > input', browser.Keys.DELETE)
+		  .setValue('tbody > tr:nth-child(5) > td:nth-child(3) > input', browser.Keys.DELETE)
+		  .setValue('tbody > tr:nth-child(6) > td:nth-child(3) > input', browser.Keys.DELETE)
+		  .setValue('tbody > tr:nth-child(2) > td:nth-child(3) > input', '8')
+		  .setValue('tbody > tr:nth-child(3) > td:nth-child(3) > input', '8')
+		  .setValue('tbody > tr:nth-child(4) > td:nth-child(3) > input', '8')
+		  .setValue('tbody > tr:nth-child(5) > td:nth-child(3) > input', '8')
+		  .setValue('tbody > tr:nth-child(6) > td:nth-child(3) > input', '8');
     }
 };
