@@ -6,9 +6,10 @@ module.exports = {
 		// console.log(argv.username);
 		// browser.globals.username	= argv.username;
 		// browser.globals.password	= argv.password;
-		var creds = new Object();
-	        username	= argv.username;
-	        password	= argv.password;
+		var creds = {
+	        username:	argv.username,
+	        password:	argv.password
+		};
 	    return creds;
     }
 };
